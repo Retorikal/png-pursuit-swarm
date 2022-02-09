@@ -1,0 +1,6 @@
+<launch>
+<!--rosrun rosbag play bags/movement_2_2022-02-07-12-23-39.bag -->
+  <node pkg="rosbag" type="play" name="chase_target" args="$(find sitl_driver)/bags/movement_2_2022-02-07-12-23-39.bag"> 
+    <remap from="/mavros/local_position/pose" to="/target/local_position/pose"/>
+  </node>
+</launch>

@@ -1,0 +1,10 @@
+#!/bin/bash
+source /usr/share/gazebo/setup.sh
+
+GAZEBO_INSTALL_LOC="./ardupilot_gazebo"
+
+export DISPLAY=':0'
+export GAZEBO_MODEL_PATH=${GAZEBO_INSTALL_LOC}/models:${GAZEBO_MODEL_PATH}
+export GAZEBO_MODEL_PATH=${GAZEBO_INSTALL_LOC}/models_gazebo:${GAZEBO_MODEL_PATH}
+export GAZEBO_RESOURCE_PATH=${GAZEBO_INSTALL_LOC}/worlds:${GAZEBO_RESOURCE_PATH}
+export GAZEBO_PLUGIN_PATH=${GAZEBO_INSTALL_LOC}/build:${GAZEBO_PLUGIN_PATH}

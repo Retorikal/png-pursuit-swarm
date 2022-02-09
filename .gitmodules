@@ -1,0 +1,3 @@
+[submodule "ardupilot_gazebo.git"]
+	path = ardupilot_gazebo
+	url = https://github.com/SwiftGust/ardupilot_gazebo.git
